@@ -1,0 +1,188 @@
+$pdsizehead:5px;
+$headclr:darkgrey;
+$brdrdet:.05px solid grey;
+
+.header{
+	
+	background-color:black;
+	height:60px;
+	display:flex;
+	justify-content:space-between;
+	color:$headclr;
+	&-list1{
+		display:flex;
+		justify-content:center;
+		list-style-type:none;
+		width:400px;
+		&-applogo{
+			height:35px;
+			width:35px;
+		};
+
+		&-logoclass{
+		width:35px;
+		
+		};
+
+		&-linkscommon{
+		width:100px;
+		text-align:center;
+		padding-top:$pdsizehead;
+		};
+
+	};
+	&-list2{
+		display:flex;
+		list-style-type:none;
+		width:400px;
+
+		&-account{
+			width:80px;
+			text-align:center;
+			padding-top:$pdsizehead;
+			
+
+		}
+
+		&-namec{
+		padding-bottom:5px;
+		}
+		&-name{
+			background-color:black;
+			color:$headclr;
+			width:120px;
+			height:30px;
+			text-align:center;
+			border:none;
+			FONT-SIZE:85%;
+	
+		}
+	};
+
+}
+
+
+
+.dropdown-content {
+    display: none;
+	list-style-type:none;
+    position: absolute;
+    background-color: black;;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    &-ele{
+    margin-top:5px;
+    margin-bottom:5px;
+    }
+    }
+
+.show {display:block;}
+
+.body{
+	display:flex;
+	justify-content:flex-start;
+	height:850px;
+	&-form{
+			height:750px;
+		    margin-top: 31px;
+		border: 1px solid black;    
+		margin-left:100px;
+		font-size:200%;
+		width:620px;
+		&-list{
+			list-style-type:none;
+			&-heading{
+				margin-left: 100px;
+
+			}
+			&-input{
+				width:220px;
+				height:20px;
+			}
+			&-checkboxele{
+				padding-left:200px;
+			}
+			&-cpassele{
+				font-size:76%;
+			}
+			&-subres{
+				width:100px;
+				height:30px;
+				background-color:grey;
+			}
+		}
+	}
+
+
+	&-dashboard{
+		border: 1px solid black;
+		height:750px;
+	margin-right:100px;
+	margin-left:30px;
+		&-fixp{
+		position:relative;
+		text-align:center;
+		height:20px;
+		}
+		list-style-type:none;
+		font-size:200%;
+		width:620px;
+		overflow:scroll;
+		
+		&-eles{
+		padding-top:5px;
+		padding-bottom:5px;
+		padding-left:30px;
+		width:400px;
+		align-text:center;
+		}
+	}
+
+
+}
+
+
+.footer{
+	height:30px;
+	display:flex;
+	border-top: $brdrdet;
+	margin-top: $pdsizehead;
+	justify-content:space-around;
+	&-list1{
+	padding-left:30px;
+	width:300px;
+	list-style-type:none;
+	font-size:70%;
+	color:$headclr;
+	display:flex;
+	&-image{
+	background-color:silver;
+	height:12px;
+	width:12px;
+	}
+	&-text{
+	width:200px;
+	padding-left:5px;
+	}
+	}
+	&-list2{
+	width:750px;
+	list-style-type:none;
+	font-size:70%;
+	color:$headclr;
+	display:flex;
+	justify-content:flex-end;
+	&-eles{
+	width:150px;
+	display:flex;
+	justify-content:center;
+	}
+	}
+
+}
+
+

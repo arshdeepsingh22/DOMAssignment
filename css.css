@@ -1,0 +1,136 @@
+.header {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: darkgrey; }
+  .header-list1 {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 400px; }
+    .header-list1-applogo {
+      height: 35px;
+      width: 35px; }
+    .header-list1-logoclass {
+      width: 35px; }
+    .header-list1-linkscommon {
+      width: 100px;
+      text-align: center;
+      padding-top: 5px; }
+  .header-list2 {
+    display: flex;
+    list-style-type: none;
+    width: 400px; }
+    .header-list2-account {
+      width: 80px;
+      text-align: center;
+      padding-top: 5px; }
+    .header-list2-namec {
+      padding-bottom: 5px; }
+    .header-list2-name {
+      background-color: black;
+      color: darkgrey;
+      width: 120px;
+      height: 30px;
+      text-align: center;
+      border: none;
+      FONT-SIZE: 85%; }
+
+.dropdown-content {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  background-color: black;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none; }
+  .dropdown-content-ele {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.show {
+  display: block; }
+
+.body {
+  display: flex;
+  justify-content: flex-start;
+  height: 850px; }
+  .body-form {
+    height: 750px;
+    margin-top: 31px;
+    border: 1px solid black;
+    margin-left: 100px;
+    font-size: 200%;
+    width: 620px; }
+    .body-form-list {
+      list-style-type: none; }
+      .body-form-list-heading {
+        margin-left: 100px; }
+      .body-form-list-input {
+        width: 220px;
+        height: 20px; }
+      .body-form-list-checkboxele {
+        padding-left: 200px; }
+      .body-form-list-cpassele {
+        font-size: 76%; }
+      .body-form-list-subres {
+        width: 100px;
+        height: 30px;
+        background-color: grey; }
+  .body-dashboard {
+    border: 1px solid black;
+    height: 750px;
+    margin-right: 100px;
+    margin-left: 30px;
+    list-style-type: none;
+    font-size: 200%;
+    width: 620px;
+    overflow: scroll; }
+    .body-dashboard-fixp {
+      position: relative;
+      text-align: center;
+      height: 20px; }
+    .body-dashboard-eles {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 30px;
+      width: 400px;
+      align-text: center; }
+
+.footer {
+  height: 30px;
+  display: flex;
+  border-top: 0.05px solid grey;
+  margin-top: 5px;
+  justify-content: space-around; }
+  .footer-list1 {
+    padding-left: 30px;
+    width: 300px;
+    list-style-type: none;
+    font-size: 70%;
+    color: darkgrey;
+    display: flex; }
+    .footer-list1-image {
+      background-color: silver;
+      height: 12px;
+      width: 12px; }
+    .footer-list1-text {
+      width: 200px;
+      padding-left: 5px; }
+  .footer-list2 {
+    width: 750px;
+    list-style-type: none;
+    font-size: 70%;
+    color: darkgrey;
+    display: flex;
+    justify-content: flex-end; }
+    .footer-list2-eles {
+      width: 150px;
+      display: flex;
+      justify-content: center; }
+
+/*# sourceMappingURL=css.css.map */

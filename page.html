@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script type="text/javascript" src="formvalidations.js"></script>
+</head>
+<body>
+<div class="header">
+
+
+<ul class="header-list1">
+<li class="header-list1-logoclass"><img class="header-list1-applogo" src="appdirect_footer.png"></li>
+<li class="header-list1-linkscommon">MyApps</li>
+<li class="header-list1-linkscommon">Marketplace</li>
+</ul>
+
+<ul class="header-list2">
+<li class="header-list2-account">Account</li>
+<li class="header-list2-namec"><input class="header-list2-name" type="button" name="namedrop" value="Arshdeep Singh" onclick="dropfunction()">
+
+
+
+  <ul id="myDropdown" class="dropdown-content">
+    <li class="dropdown-content-ele">Home</li>
+    <li class="dropdown-content-ele">About</li>
+    <li class="dropdown-content-ele">Contact</li>
+  </ul>
+
+
+
+</li>
+</ul>
+
+<!--onblur="validate()"-->
+
+</div>
+
+<div class="body">
+<form class="body-form" name="regform" onsubmit="" method="post" >
+<pre>
+<ul class="body-form-list">
+<li class="body-form-list-heading">Registration Page</li>
+<li class="body-form-list-formeles"><sup>*</sup>FirstName       <input class="body-form-list-input" type="text" name="firstname"></li>
+<li class="body-form-list-formeles">LastName         <input class="body-form-list-input" type="text" name="lastname"></li>
+<li class="body-form-list-formeles"><sup>*</sup>Address (P)     <input id="homeadd" class="body-form-list-input" type="text" name="homeaddress"></li>
+<li class="body-form-list-checkboxele"><input type="checkbox" id="check" name="addresscheckbox" onclick="funcAddress()"></li>
+<li class="body-form-list-formeles"><sup>*</sup>Address (C)     <input id="compadd" class="body-form-list-input" type="text" name="officeaddress"></li>
+<li class="body-form-list-formeles"><sup>*</sup>E-mail          <input class="body-form-list-input" type="email" name="email"></li>
+<li class="body-form-list-formeles"><sup>*</sup>Mobile          <input class="body-form-list-input" type="tel" name="mobilephone"></li>
+<li class="body-form-list-formeles"><sup>*</sup>Password        <input id="pass" class="body-form-list-input" type="password" name="password"></li>
+<li class="body-form-list-cpassele"><sup>*</sup>Confirm Password     <input  id="cpass" onblur="validate()" class="body-form-list-input" type="password" name="confirmpassword"></li>
+<li >        <input class="body-form-list-subres" id="submit" type="button" value="Submit" onclick="registering(this.form)" disabled>      <input class="body-form-list-subres" id="reset" type="reset" name="resetname" value="Reset"></li>
+</ul>
+</pre>
+</form>
+
+<!-- <div id="dashboard" class="body-dashboard">
+<h1 class="body-dashboard-fixp">DASHBOARD</h1>
+
+</div> -->
+
+<ul id="dashboard" class="body-dashboard">
+<li class="body-dashboard-fixp">DASHBOARD</li>
+<br>
+</ul>
+
+
+
+</div>
+
+
+<div class="footer">
+<ul class="footer-list1">
+<li><img class="footer-list1-image" src="appdirect_logo.png"></li>
+<li class="footer-list1-text">Powered By AppDirect@2009-17</li>
+</ul>
+
+<ul class="footer-list2">
+<li class="footer-list2-eles">
+<select>
+  <option value="enus" selected>English(US)</option>
+  <option value="hindi">Hindi</option>
+  <option value="spanish">Spanish</option>
+  <option value="pbi">Punjabi</option>
+  <option value="french">French</option>
+</select></li>
+<li class="footer-list2-eles">Help Center</li>
+<li class="footer-list2-eles">Privacy Policy</li>
+<li class="footer-list2-eles">Terms and Conditions</li>
+<li class="footer-list2-eles">Contact</li>
+</ul>
+</div>
+
+
+
+
+</body>
+
+</html>
