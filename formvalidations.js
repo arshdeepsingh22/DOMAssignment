@@ -21,6 +21,14 @@ function validate() {
 		return false;
 	}
 
+	var mail = document.forms["regform"]["email"].value;
+	var inpMatchn = mail.match(/[a-z0-9._+-]+@[a-z0-9]+\.[a-z]+/g);
+	if (inpMatchn != mail) {
+
+		alert("Enter Valid Email");
+		return false;
+	}
+
 	var pass = document.forms["regform"]["password"].value;
 	var inpMatch4 = pass.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/g);
 	if (inpMatch4 != pass) {
@@ -33,8 +41,7 @@ function validate() {
 		alert("Passwords dont match");
 		return false;
 	}
-	var passcopy = document.getElementById('submit');
-	passcopy.removeAttribute("disabled");
+
 	return true;
 
 
@@ -50,6 +57,13 @@ function funcAddress() {
 
 }
 
+
+function checkingForm() {
+	if (validate() == true) {
+		var passcopy = document.getElementById('submit');
+		passcopy.removeAttribute("disabled");
+	}
+}
 
 
 function registering(forrm) {
