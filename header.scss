@@ -1,0 +1,197 @@
+$headclr: #A9A9A9;
+$colgrey: #808080;
+$brdrdet: 1px solid $colgrey;
+$colblack: #000;
+$colsilver: #C0C0C0;
+
+.header {
+	background-color: $colblack;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	color: $headclr;
+
+	&-list1 {
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+		width: 400px;
+
+		&-applogo {
+			&-anc {
+				background: url("./appdirect_footer.png");
+				background-size: 100% 100%;
+				height: 35px;
+				width: 35px;
+				display: flex;
+			}
+		}
+
+		&-linkscommon {
+			width: 100px;
+			text-align: center;
+			padding-top: 5px;
+		}
+	}
+
+	&-list2 {
+		display: flex;
+		list-style-type: none;
+		width: 400px;
+
+		&-account {
+			width: 80px;
+			text-align: center;
+			padding-top: 5px;
+		}
+
+		&-namec {
+			padding-bottom: 5px;
+		}
+
+		&-name {
+			background-color: $colblack;
+			color: $headclr;
+			width: 120px;
+			height: 30px;
+			text-align: center;
+			border: none;
+			font-size: 14px;
+		}
+	}
+}
+
+.dropdown-content {
+	list-style-type: none;
+	position: absolute;
+	background-color: $colblack;
+	width: 160px;
+	z-index: 1;
+	color: #fff;
+	padding: 12px 16px;
+	text-decoration: none;
+
+	&-ele {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+.dont-show {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.body {
+	display: flex;
+	justify-content: flex-start;
+	height: 850px;
+
+	&-form {
+		height: 750px;
+		margin-top: 31px;
+		border: 1px solid $colblack;
+		margin-left: 100px;
+		font-size: 25px;
+		width: 620px;
+
+		&-list {
+			list-style-type: none;
+
+			&-heading {
+				margin-left: 100px;
+			}
+
+			&-input {
+				width: 220px;
+				height: 20px;
+			}
+
+			&-checkboxele {
+				padding-left: 200px;
+			}
+
+			&-cpassele {
+				font-size: 19.5px;
+			}
+
+			&-subres {
+				width: 100px;
+				height: 30px;
+				background-color: $colgrey;
+			}
+		}
+	}
+
+	&-dashboard {
+		border: 1px solid $colblack;
+		height: 750px;
+		margin-right: 100px;
+		margin-left: 30px;
+
+		&-fixp {
+			position: relative;
+			text-align: center;
+			height: 20px;
+		}
+
+		list-style-type: none;
+		font-size: 200%;
+		width: 620px;
+		overflow: scroll;
+
+		&-eles {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 30px;
+			width: 400px;
+			align-text: center;
+		}
+	}
+}
+
+.footer {
+	height: 30px;
+	display: flex;
+	border-top: $brdrdet;
+	margin-top: 5px;
+	justify-content: space-around;
+
+	&-list1 {
+		padding-left: 30px;
+		width: 300px;
+		list-style-type: none;
+		font-size: 70%;
+		color: $headclr;
+		display: flex;
+
+		&-image {
+			background-color: $colsilver;
+			height: 12px;
+			width: 12px;
+		}
+
+		&-text {
+			width: 200px;
+			padding-left: 5px;
+		}
+	}
+
+	&-list2 {
+		width: 750px;
+		list-style-type: none;
+		font-size: 11px;
+		color: $headclr;
+		display: flex;
+		justify-content: flex-end;
+
+		&-eles {
+			width: 150px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
