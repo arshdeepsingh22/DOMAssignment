@@ -9,18 +9,18 @@
 
 
 <ul class="header-list1">
-<li class="header-list1-logoclass"><img class="header-list1-applogo" src="appdirect_footer.png"></li>
+<li class="header-list1-applogo"><a class="header-list1-applogo-anc" href="https://www.google.co.in/?gfe_rd=cr&ei=jDmsWOzUJ8_08wfe2LWAAw"></a></li>
 <li class="header-list1-linkscommon">MyApps</li>
 <li class="header-list1-linkscommon">Marketplace</li>
 </ul>
 
 <ul class="header-list2">
 <li class="header-list2-account">Account</li>
-<li class="header-list2-namec"><input class="header-list2-name" type="button" name="namedrop" value="Arshdeep Singh" onclick="dropfunction()">
+<li class="header-list2-namec"><input id="nameBtn" class="header-list2-name " type="button" name="namedrop" value="Arshdeep Singh">
 
 
 
-  <ul id="myDropdown" class="dropdown-content">
+  <ul id="myDropdown" class="dropdown-content dont-show">
     <li class="dropdown-content-ele">Home</li>
     <li class="dropdown-content-ele">About</li>
     <li class="dropdown-content-ele">Contact</li>
@@ -40,16 +40,16 @@
 <pre>
 <ul class="body-form-list">
 <li class="body-form-list-heading">Registration Page</li>
-<li class="body-form-list-formeles"><sup>*</sup>FirstName       <input class="body-form-list-input" type="text" name="firstname"></li>
-<li class="body-form-list-formeles">LastName         <input class="body-form-list-input" type="text" name="lastname"></li>
+<li class="body-form-list-formeles"><sup>*</sup>FirstName       <input id="firstname" class="body-form-list-input" type="text" name="firstname"></li>
+<li class="body-form-list-formeles">LastName         <input id="lastname" class="body-form-list-input" type="text" name="lastname"></li>
 <li class="body-form-list-formeles"><sup>*</sup>Address (P)     <input id="homeadd" class="body-form-list-input" type="text" name="homeaddress"></li>
-<li class="body-form-list-checkboxele"><input type="checkbox" id="check" name="addresscheckbox" onclick="funcAddress()"></li>
+<li class="body-form-list-checkboxele"><input type="checkbox" id="check" name="addresscheckbox"></li>
 <li class="body-form-list-formeles"><sup>*</sup>Address (C)     <input id="compadd" class="body-form-list-input" type="text" name="officeaddress"></li>
-<li class="body-form-list-formeles"><sup>*</sup>E-mail          <input class="body-form-list-input" type="email" name="email"></li>
+<li class="body-form-list-formeles"><sup>*</sup>E-mail          <input id="email" class="body-form-list-input" type="email" name="email"></li>
 <li class="body-form-list-formeles"><sup>*</sup>Mobile          <input class="body-form-list-input" type="tel" name="mobilephone"></li>
-<li class="body-form-list-formeles"><sup>*</sup>Password        <input id="pass" class="body-form-list-input" type="password" name="password"></li>
-<li class="body-form-list-cpassele"><sup>*</sup>Confirm Password     <input  id="cpass" onblur="checkingForm()" class="body-form-list-input" type="password" name="confirmpassword"></li>
-<li >        <input class="body-form-list-subres" id="submit" type="button" value="Submit" onclick="registering(this.form)" disabled>      <input class="body-form-list-subres" id="reset" type="reset" name="resetname" value="Reset"></li>
+<li class="body-form-list-formeles"><sup>*</sup>Password        <input id="pass" class="body-form-list-input"  type="password" name="password"></li>
+<li class="body-form-list-cpassele"><sup>*</sup>Confirm Password     <input  id="cpass" class="body-form-list-input" type="password" name="confirmpassword"></li>
+<li >        <input class="body-form-list-subres" id="submit" type="button" value="Submit"  disabled>      <input class="body-form-list-subres" id="reset" type="reset" name="resetname" value="Reset"></li>
 </ul>
 </pre>
 </form>
